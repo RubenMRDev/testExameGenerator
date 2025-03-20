@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Tipo Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="container mx-auto p-6 max-w-lg bg-white rounded-lg shadow-lg">
+    <h1 class="text-3xl font-bold text-center mb-4">Examen Tipo Test</h1>
+
+    <div id="main-menu" class="text-center">
+      <label class="block mb-2 text-lg font-medium">Selecciona el fichero XML:</label>
+      <input type="file" id="xmlFile" accept=".xml" class="mb-4 p-2 border rounded">
+      <button id="loadExam" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Cargar Examen
+      </button>
+    </div>
+
+    <div id="exam-container" class="hidden text-center">
+      <p id="progress" class="mb-4 text-lg font-semibold"></p>
+      <div id="question-box" class="p-4 bg-gray-100 rounded shadow-lg">
+        <p id="question-text" class="text-lg font-bold mb-4"></p>
+        <div id="options-container" class="space-y-2"></div>
+      </div>
+      <div id="button-container" class="mt-4">
+        <button id="acceptAnswer" class="bg-blue-500 text-white px-4 py-2 rounded" disabled>
+          Aceptar Respuesta
+        </button>
+      </div>
+      <p id="feedback" class="mt-4 font-semibold hidden"></p>
+    </div>
+
+    <div id="result" class="hidden text-center mt-4">
+      <p id="score" class="text-xl font-semibold"></p>
+      <button id="repeatWrong" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 mt-2 hidden">
+        Repetir Preguntas Incorrectas
+      </button>
+      <button id="restartTest" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-2">
+        Volver al Inicio
+      </button>
+    </div>
+  </div>
+
+  <script>
+    let questions = [];
+    let currentQuestionIndex = 0;
+    let correctAnswers = 0;
+    let wrongQuestions = [];
+    let selectedAnswer = null;
+
+    document.getElementById('loadExam').addEventListener('click', function () {
+      const fileInput = document.getElementById('xmlFile');
+      if (fileInput.files.length === 0) {
+        alert('Por favor, selecciona un fichero XML.');
+        return;
+      }
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(e.target.result, "text/xml");
+        loadExam(xmlDoc);
+      }
+      reader.readAsText(file);
+    });
+
+    function loadExam(xml) {
+      questions = [];
+      currentQuestionIndex = 0;
+      correctAnswers = 0;
+      wrongQuestions = [];
+      selectedAnswer = null;
+
+      const questionNodes = xml.getElementsByTagName('question');
+      for (let i = 0; i < questionNodes.length; i++) {
+        const questionText = questionNodes[i].getElementsByTagName('text')[0].textContent;
+        const options = [];
+        let correctOption = '';
+
+        const optionNodes = questionNodes[i].getElementsByTagName('option');
+        for (let j = 0; j < optionNodes.length; j++) {
+          const letter = optionNodes[j].getAttribute('letter');
+          const text = optionNodes[j].textContent;
+          const isCorrect = optionNodes[j].getAttribute('correct') === "true";
+          if (isCorrect) correctOption = letter;
+          options.push({ letter, text, isCorrect });
+        }
+        questions.push({ questionText, options, correctOption });
+      }
+
+      document.getElementById('main-menu').classList.add('hidden');
+      document.getElementById('exam-container').classList.remove('hidden');
+      showQuestion();
+    }
+
+    function showQuestion() {
+      selectedAnswer = null;
+      const questionData = questions[currentQuestionIndex];
+      document.getElementById('progress').textContent = `Pregunta ${currentQuestionIndex + 1} de ${questions.length}`;
+      document.getElementById('question-text').textContent = questionData.questionText;
+      
+      const optionsContainer = document.getElementById('options-container');
+      optionsContainer.innerHTML = "";
+
+      questionData.options.forEach(option => {
+        const optionDiv = document.createElement('div');
+        optionDiv.className = "p-4 bg-white rounded shadow cursor-pointer hover:bg-blue-100 transition";
+        optionDiv.textContent = `${option.letter.toUpperCase()}: ${option.text}`;
+        optionDiv.dataset.letter = option.letter;
+
+        optionDiv.addEventListener('click', function () {
+          document.querySelectorAll("#options-container div").forEach(div => {
+            div.classList.remove("bg-blue-300");
+          });
+          optionDiv.classList.add("bg-blue-300");
+          selectedAnswer = option.letter;
+          document.getElementById('acceptAnswer').disabled = false;
+          document.getElementById('acceptAnswer').classList.add('hover:bg-blue-600');
+        });
+
+        optionsContainer.appendChild(optionDiv);
+      });
+
+      // Reset button container to show Accept Answer button
+      const buttonContainer = document.getElementById('button-container');
+      buttonContainer.innerHTML = `
+        <button id="acceptAnswer" class="bg-blue-500 text-white px-4 py-2 rounded" disabled>
+          Aceptar Respuesta
+        </button>
+      `;
+      document.getElementById('acceptAnswer').addEventListener('click', acceptAnswerHandler);
+      
+      document.getElementById('feedback').classList.add('hidden');
+    }
+
+    function acceptAnswerHandler() {
+      if (!selectedAnswer) return;
+
+      const correctOption = questions[currentQuestionIndex].correctOption;
+      const feedback = document.getElementById('feedback');
+
+      if (selectedAnswer === correctOption) {
+        feedback.textContent = "¡Respuesta correcta!";
+        feedback.className = "mt-4 font-semibold text-green-600";
+        correctAnswers++;
+      } else {
+        feedback.textContent = `Incorrecto. La respuesta correcta era: ${correctOption.toUpperCase()}`;
+        feedback.className = "mt-4 font-semibold text-red-600";
+        wrongQuestions.push(questions[currentQuestionIndex]);
+      }
+
+      feedback.classList.remove('hidden');
+      
+      // Replace Accept Answer button with Next Question button
+      const buttonContainer = document.getElementById('button-container');
+      buttonContainer.innerHTML = `
+        <button id="nextQuestion" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+          Siguiente Pregunta
+        </button>
+      `;
+      document.getElementById('nextQuestion').addEventListener('click', nextQuestionHandler);
+    }
+
+    function nextQuestionHandler() {
+      currentQuestionIndex++;
+      if (currentQuestionIndex < questions.length) {
+        showQuestion();
+      } else {
+        showResults();
+      }
+    }
+
+    function showResults() {
+      document.getElementById('exam-container').classList.add('hidden');
+      document.getElementById('result').classList.remove('hidden');
+      const percentage = Math.round((correctAnswers / questions.length) * 100);
+      document.getElementById('score').textContent = `Has acertado ${percentage}% de las respuestas.`;
+
+      if (wrongQuestions.length > 0) {
+        document.getElementById('repeatWrong').classList.remove('hidden');
+      } else {
+        document.getElementById('repeatWrong').classList.add('hidden');
+      }
+    }
+
+    document.getElementById('repeatWrong').addEventListener('click', function () {
+      questions = wrongQuestions;
+      currentQuestionIndex = 0;
+      correctAnswers = 0;
+      wrongQuestions = [];
+      document.getElementById('result').classList.add('hidden');
+      document.getElementById('exam-container').classList.remove('hidden');
+      showQuestion();
+    });
+
+    document.getElementById('restartTest').addEventListener('click', function () {
+      document.getElementById('result').classList.add('hidden');
+      document.getElementById('main-menu').classList.remove('hidden');
+      document.getElementById('xmlFile').value = "";
+    });
+  </script>
+</body>
+</html>
