@@ -1,0 +1,394 @@
+<exam>
+	<question>
+		<text>¿Qué significa DNS?</text>
+		<option letter="a" correct="true">Domain Name System</option>
+		<option letter="b" correct="false">Digital Network Service</option>
+		<option letter="c" correct="false">Data Network Solution</option>
+		<option letter="d" correct="false">Domain Network Server</option>
+	</question>
+	<question>
+		<text>¿Cuál es la función principal del DNS?</text>
+		<option letter="a" correct="false">Gestionar las conexiones entre servidores</option>
+		<option letter="b" correct="false">Proteger las redes contra ataques informáticos</option>
+		<option letter="c" correct="true">Traducir nombres de dominio en direcciones IP</option>
+		<option letter="d" correct="false">Optimizar el tráfico de red en Internet</option>
+	</question>
+	<question>
+		<text>¿Qué tipo de servicio en la nube ofrece solo la infraestructura básica?</text>
+		<option letter="a" correct="true">IaaS (Infraestructura como Servicio)</option>
+		<option letter="b" correct="false">PaaS (Plataforma como Servicio)</option>
+		<option letter="c" correct="false">SaaS (Software como Servicio)</option>
+		<option letter="d" correct="false">DaaS (Datos como Servicio)</option>
+	</question>
+	<question>
+		<text>¿Qué representa el nivel más alto en la jerarquía DNS?</text>
+		<option letter="a" correct="false">Los TLD (Top-Level Domains)</option>
+		<option letter="b" correct="false">Los subdominios</option>
+		<option letter="c" correct="false">Los dominios de segundo nivel</option>
+		<option letter="d" correct="true">El dominio raíz (.)</option>
+	</question>
+	<question>
+		<text>¿Cuál de los siguientes es un ejemplo de un TLD geográfico (ccTLD)?</text>
+		<option letter="a" correct="false">.com</option>
+		<option letter="b" correct="false">.org</option>
+		<option letter="c" correct="true">.es</option>
+		<option letter="d" correct="false">.net</option>
+	</question>
+	<question>
+		<text>¿Qué tipo de registro DNS asocia un nombre de dominio a una dirección IPv4?</text>
+		<option letter="a" correct="true">Registro A</option>
+		<option letter="b" correct="false">Registro MX</option>
+		<option letter="c" correct="false">Registro CNAME</option>
+		<option letter="d" correct="false">Registro TXT</option>
+	</question>
+	<question>
+		<text>¿Qué significa la sigla PaaS en el contexto de la computación en la nube?</text>
+		<option letter="a" correct="false">Programming as a Service</option>
+		<option letter="b" correct="false">Protocol as a Service</option>
+		<option letter="c" correct="true">Platform as a Service</option>
+		<option letter="d" correct="false">Process as a Service</option>
+	</question>
+	<question>
+		<text>¿Qué tipo de registro DNS se utiliza para la resolución inversa (IP a nombre)?</text>
+		<option letter="a" correct="false">Registro A</option>
+		<option letter="b" correct="true">Registro PTR</option>
+		<option letter="c" correct="false">Registro MX</option>
+		<option letter="d" correct="false">Registro CNAME</option>
+	</question>
+	<question>
+		<text>¿Qué organismo es responsable de supervisar y aprobar los TLD (Top-Level Domains)?</text>
+		<option letter="a" correct="false">W3C</option>
+		<option letter="b" correct="false">IEEE</option>
+		<option letter="c" correct="false">ISO</option>
+		<option letter="d" correct="true">ICANN</option>
+	</question>
+	<question>
+		<text>¿Cuál es una ventaja del alojamiento interno (in-house)?</text>
+		<option letter="a" correct="false">Bajo coste inicial</option>
+		<option letter="b" correct="false">No requiere personal especializado</option>
+		<option letter="c" correct="true">Control total sobre la infraestructura</option>
+		<option letter="d" correct="false">Escalabilidad rápida y sencilla</option>
+	</question>
+	<question>
+		<text>¿Qué tipo de registro DNS indica el servidor de correo para un dominio?</text>
+		<option letter="a" correct="false">Registro A</option>
+		<option letter="b" correct="true">Registro MX</option>
+		<option letter="c" correct="false">Registro TXT</option>
+		<option letter="d" correct="false">Registro SRV</option>
+	</question>
+	<question>
+		<text>¿Qué es un subdominio?</text>
+		<option letter="a" correct="false">Un tipo de TLD especializado</option>
+		<option letter="b" correct="false">El dominio principal de una empresa</option>
+		<option letter="c" correct="true">Una división dentro de un dominio de segundo nivel</option>
+		<option letter="d" correct="false">Un servidor DNS secundario</option>
+	</question>
+	<question>
+		<text>¿Cuál de las siguientes es una característica de la zona secundaria en DNS?</text>
+		<option letter="a" correct="false">Es donde se modifican los registros originalmente</option>
+		<option letter="b" correct="false">No se sincroniza con otras zonas</option>
+		<option letter="c" correct="false">Solo existe una por dominio</option>
+		<option letter="d" correct="true">Es una copia de solo lectura de la zona primaria</option>
+	</question>
+	<question>
+		<text>¿Qué servicio de nube gestiona todo, desde la infraestructura hasta la aplicación?</text>
+		<option letter="a" correct="false">IaaS</option>
+		<option letter="b" correct="false">PaaS</option>
+		<option letter="c" correct="true">SaaS</option>
+		<option letter="d" correct="false">BaaS</option>
+	</question>
+	<question>
+		<text>¿Para qué sirve el registro CNAME en DNS?</text>
+		<option letter="a" correct="false">Para asociar un nombre de dominio a una dirección IPv6</option>
+		<option letter="b" correct="true">Para crear un alias de un nombre de dominio hacia otro existente</option>
+		<option letter="c" correct="false">Para indicar el servidor de correo de un dominio</option>
+		<option letter="d" correct="false">Para almacenar información de texto asociada al dominio</option>
+	</question>
+	<question>
+		<text>¿Qué tipo de registro DNS se utiliza para direcciones IPv6?</text>
+		<option letter="a" correct="false">Registro A</option>
+		<option letter="b" correct="false">Registro PTR</option>
+		<option letter="c" correct="true">Registro AAAA</option>
+		<option letter="d" correct="false">Registro MX</option>
+	</question>
+	<question>
+		<text>¿Qué significa SOA en el contexto de los registros DNS?</text>
+		<option letter="a" correct="false">Service Oriented Architecture</option>
+		<option letter="b" correct="false">System of Access</option>
+		<option letter="c" correct="false">Security Operational Analysis</option>
+		<option letter="d" correct="true">Start of Authority</option>
+	</question>
+	<question>
+		<text>¿Cuál es una desventaja de la computación en la nube?</text>
+		<option letter="a" correct="true">Menor control sobre la infraestructura</option>
+		<option letter="b" correct="false">Costes iniciales más altos</option>
+		<option letter="c" correct="false">Escalabilidad limitada</option>
+		<option letter="d" correct="false">Actualizaciones manuales</option>
+	</question>
+	<question>
+		<text>¿Qué tipo de servidor DNS se encarga de buscar respuestas de forma iterativa o recursiva?</text>
+		<option letter="a" correct="false">Servidor DNS autorizado</option>
+		<option letter="b" correct="true">Servidor DNS recursor (o resolutor)</option>
+		<option letter="c" correct="false">Servidor raíz</option>
+		<option letter="d" correct="false">Servidor TLD</option>
+	</question>
+	<question>
+		<text>¿Qué contiene un registro SOA en una zona DNS?</text>
+		<option letter="a" correct="false">Solo la dirección IP del servidor principal</option>
+		<option letter="b" correct="false">La lista de todos los subdominios</option>
+		<option letter="c" correct="true">Datos como el correo del administrador y el número de serie</option>
+		<option letter="d" correct="false">Únicamente la fecha de creación del dominio</option>
+	</question>
+	<question>
+		<text>¿Qué es la resolución directa en DNS?</text>
+		<option letter="a" correct="true">Traducir un nombre de dominio a una dirección IP</option>
+		<option letter="b" correct="false">Traducir una dirección IP a un nombre de dominio</option>
+		<option letter="c" correct="false">Conectar directamente con el servidor raíz</option>
+		<option letter="d" correct="false">Acceder a la caché DNS sin consultar servidores externos</option>
+	</question>
+	<question>
+		<text>¿Cuál es un ejemplo de un gTLD (Generic Top-Level Domain)?</text>
+		<option letter="a" correct="false">.es</option>
+		<option letter="b" correct="false">.fr</option>
+		<option letter="c" correct="true">.org</option>
+		<option letter="d" correct="false">.mx</option>
+	</question>
+	<question>
+		<text>¿Qué caracteriza a un servidor DNS autorizado?</text>
+		<option letter="a" correct="false">Solo almacena temporalmente las respuestas DNS</option>
+		<option letter="b" correct="false">Nunca responde directamente a las consultas</option>
+		<option letter="c" correct="false">Siempre recurre a otros servidores</option>
+		<option letter="d" correct="true">Almacena la información oficial de una zona concreta</option>
+	</question>
+	<question>
+		<text>¿Para qué se utiliza principalmente un registro TXT en DNS?</text>
+		<option letter="a" correct="true">Para guardar información de texto como registros SPF o verificaciones de propiedad</option>
+		<option letter="b" correct="false">Para asociar un dominio con su dirección IP</option>
+		<option letter="c" correct="false">Para definir servidores de correo</option>
+		<option letter="d" correct="false">Para crear alias entre dominios</option>
+	</question>
+	<question>
+		<text>¿Qué proceso se utiliza para sincronizar la zona secundaria con la primaria en DNS?</text>
+		<option letter="a" correct="false">Sincronización directa</option>
+		<option letter="b" correct="false">Replicación automática</option>
+		<option letter="c" correct="true">Transferencia de zona (zone transfer)</option>
+		<option letter="d" correct="false">Actualización dinámica</option>
+	</question>
+	<question>
+		<text>¿Qué ejemplo corresponde a un servicio SaaS?</text>
+		<option letter="a" correct="false">AWS EC2</option>
+		<option letter="b" correct="false">Un servidor físico en la empresa</option>
+		<option letter="c" correct="false">Google App Engine</option>
+		<option letter="d" correct="true">Office 365</option>
+	</question>
+	<question>
+		<text>¿Qué permite el registro SRV en DNS?</text>
+		<option letter="a" correct="false">Solo registrar servidores web</option>
+		<option letter="b" correct="true">Ubicar servicios específicos en un dominio, como servidores de chat o VoIP</option>
+		<option letter="c" correct="false">Exclusivamente configurar servicios de correo electrónico</option>
+		<option letter="d" correct="false">Definir la autoridad principal del dominio</option>
+	</question>
+	<question>
+		<text>¿Cuál es una característica de la tecnología de contenedores (como Docker)?</text>
+		<option letter="a" correct="false">Requiere una máquina virtual completa para cada aplicación</option>
+		<option letter="b" correct="false">No permite la portabilidad entre diferentes sistemas</option>
+		<option letter="c" correct="true">Aísla aplicaciones con sus dependencias para facilitar el despliegue</option>
+		<option letter="d" correct="false">Solo funciona en entornos de alojamiento interno (in-house)</option>
+	</question>
+	<question>
+		<text>¿Qué es un servidor DNS caché?</text>
+		<option letter="a" correct="true">Almacena temporalmente las respuestas DNS para acelerar futuras consultas</option>
+		<option letter="b" correct="false">Solo gestiona zonas primarias</option>
+		<option letter="c" correct="false">Únicamente se encarga de la resolución inversa</option>
+		<option letter="d" correct="false">Es el servidor principal que determina los TLD</option>
+	</question>
+	<question>
+		<text>¿Qué tecnología permite ejecutar múltiples máquinas virtuales sobre un mismo hardware?</text>
+		<option letter="a" correct="false">DNS</option>
+		<option letter="b" correct="false">Docker</option>
+		<option letter="c" correct="true">Virtualización</option>
+		<option letter="d" correct="false">DNSSEC</option>
+	</question>
+	<question>
+		<text>¿Qué ventaja ofrece la computación en la nube respecto al alojamiento interno?</text>
+		<option letter="a" correct="false">Mayor control físico sobre los servidores</option>
+		<option letter="b" correct="false">Independencia de la conexión a Internet</option>
+		<option letter="c" correct="false">Menor dependencia de proveedores externos</option>
+		<option letter="d" correct="true">Escalado casi inmediato de recursos</option>
+	</question>
+	<question>
+		<text>¿En qué consiste la resolución inversa de DNS?</text>
+		<option letter="a" correct="false">Traducir un nombre de dominio a una dirección IP</option>
+		<option letter="b" correct="true">Traducir una dirección IP a un nombre de dominio</option>
+		<option letter="c" correct="false">Consultar desde los servidores autoritativos hacia los raíz</option>
+		<option letter="d" correct="false">Actualizar la caché DNS con información de los servidores TLD</option>
+	</question>
+	<question>
+		<text>¿Cuál de estas plataformas es un ejemplo de PaaS?</text>
+		<option letter="a" correct="false">AWS EC2</option>
+		<option letter="b" correct="false">Office 365</option>
+		<option letter="c" correct="true">Heroku</option>
+		<option letter="d" correct="false">Un servidor dedicado en un datacenter propio</option>
+	</question>
+	<question>
+		<text>¿Qué es la orquestación de contenedores?</text>
+		<option letter="a" correct="false">Un tipo de registro DNS</option>
+		<option letter="b" correct="false">Una técnica para resolver nombres de dominio</option>
+		<option letter="c" correct="false">Un proceso de transferencia de zona en DNS</option>
+		<option letter="d" correct="true">Gestión automática de la distribución y escalado de contenedores</option>
+	</question>
+	<question>
+		<text>¿Qué elemento de DNS define el servidor principal para una zona?</text>
+		<option letter="a" correct="true">Registro SOA</option>
+		<option letter="b" correct="false">Registro MX</option>
+		<option letter="c" correct="false">Registro CNAME</option>
+		<option letter="d" correct="false">Registro TXT</option>
+	</question>
+	<question>
+		<text>¿Qué caracteriza al modelo IaaS en la computación en la nube?</text>
+		<option letter="a" correct="false">El proveedor gestiona todo, incluida la aplicación</option>
+		<option letter="b" correct="false">El cliente solo usa el software a través de Internet</option>
+		<option letter="c" correct="true">El cliente administra el sistema operativo y las aplicaciones</option>
+		<option letter="d" correct="false">El cliente se centra solo en desarrollar aplicaciones sin administrar servidores</option>
+	</question>
+	<question>
+		<text>¿Qué aspecto es importante para la configuración correcta de DNS?</text>
+		<option letter="a" correct="false">Usar solo un único servidor DNS principal</option>
+		<option letter="b" correct="false">Evitar el uso de zonas secundarias</option>
+		<option letter="c" correct="true">Implementar redundancia para garantizar disponibilidad</option>
+		<option letter="d" correct="false">Limitar el número de registros por zona</option>
+	</question>
+	<question>
+		<text>¿Cuál es un inconveniente del alojamiento interno (in-house)?</text>
+		<option letter="a" correct="false">Menor control sobre la infraestructura</option>
+		<option letter="b" correct="false">Dependencia de proveedores externos</option>
+		<option letter="c" correct="false">Incapacidad para personalizar la infraestructura</option>
+		<option letter="d" correct="true">Costes elevados en hardware y mantenimiento</option>
+	</question>
+	<question>
+		<text>¿Qué sucede en el primer paso del proceso de resolución DNS?</text>
+		<option letter="a" correct="false">Se contacta directamente con el servidor autoritativo</option>
+		<option letter="b" correct="true">El resolutor local comprueba su caché</option>
+		<option letter="c" correct="false">El navegador traduce directamente el nombre a una IP</option>
+		<option letter="d" correct="false">Se consulta primero el registro MX</option>
+	</question>
+	<question>
+		<text>¿Qué es importante considerar al elegir entre alojamiento interno y en la nube?</text>
+		<option letter="a" correct="false">Solo el coste inicial</option>
+		<option letter="b" correct="false">Únicamente la velocidad de acceso</option>
+		<option letter="c" correct="true">Factores como presupuesto, necesidad de control y escalabilidad</option>
+		<option letter="d" correct="false">Solo la ubicación física de la empresa</option>
+	</question>
+	<question>
+		<text>¿Qué tecnología está relacionada con la gestión automática y distribución de contenedores?</text>
+		<option letter="a" correct="false">DNSSEC</option>
+		<option letter="b" correct="false">Heroku</option>
+		<option letter="c" correct="true">Kubernetes</option>
+		<option letter="d" correct="false">Office 365</option>
+	</question>
+	<question>
+		<text>¿Qué es un dominio de tercer nivel?</text>
+		<option letter="a" correct="false">Un dominio que solo puede tener tres letras</option>
+		<option letter="b" correct="false">Otro nombre para los TLD</option>
+		<option letter="c" correct="true">Se forma cuando se añaden subdominios adicionales (ej. departamento.empresa.es)</option>
+		<option letter="d" correct="false">Una categoría especial de dominios reservados para gobiernos</option>
+	</question>
+	<question>
+		<text>¿Qué caracteriza a un servidor DNS autorizado?</text>
+		<option letter="a" correct="true">Almacena la información oficial de una zona concreta</option>
+		<option letter="b" correct="false">Solo realiza consultas a otros servidores DNS</option>
+		<option letter="c" correct="false">Nunca almacena respuestas en caché</option>
+		<option letter="d" correct="false">Solo gestiona zonas secundarias</option>
+	</question>
+	<question>
+		<text>¿Qué es una consulta DNS iterativa?</text>
+		<option letter="a" correct="false">Cuando un servidor DNS responde directamente sin consultar a otros</option>
+		<option letter="b" correct="false">El proceso de transferencia de zona entre servidores</option>
+		<option letter="c" correct="true">Cuando el servidor DNS devuelve la mejor respuesta que conoce o una referencia a otro servidor</option>
+		<option letter="d" correct="false">La sincronización automática entre zonas primarias y secundarias</option>
+	</question>
+	<question>
+		<text>¿Qué ventaja ofrece el uso de Heroku como PaaS?</text>
+		<option letter="a" correct="false">Control total sobre el hardware</option>
+		<option letter="b" correct="false">Requiere gestionar el servidor y el sistema operativo</option>
+		<option letter="c" correct="true">Despliegue muy rápido y sencillo de aplicaciones</option>
+		<option letter="d" correct="false">Independencia de la conexión a Internet</option>
+	</question>
+	<question>
+		<text>¿Qué información contiene típicamente un registro PTR?</text>
+		<option letter="a" correct="false">La dirección IP de un servidor de correo</option>
+		<option letter="b" correct="false">La lista de subdominios disponibles</option>
+		<option letter="c" correct="false">El alias de un dominio hacia otro</option>
+		<option letter="d" correct="true">El nombre de dominio asociado a una dirección IP</option>
+	</question>
+	<question>
+		<text>¿Qué elemento es crucial en entornos modernos de alojamiento?</text>
+		<option letter="a" correct="false">Uso exclusivo de servidores físicos</option>
+		<option letter="b" correct="true">Automatizar despliegues y gestionar contenedores de forma dinámica</option>
+		<option letter="c" correct="false">Evitar cualquier uso de servicios en la nube</option>
+		<option letter="d" correct="false">Mantener todas las configuraciones manuales</option>
+	</question>
+	<question>
+		<text>¿Qué es importante para garantizar la seguridad en DNS?</text>
+		<option letter="a" correct="false">Utilizar solo servidores DNS raíz</option>
+		<option letter="b" correct="false">Evitar las transferencias de zona</option>
+		<option letter="c" correct="true">Implementar ajustes como DNSSEC para proteger contra suplantación</option>
+		<option letter="d" correct="false">Utilizar exclusivamente consultas recursivas</option>
+	</question>
+	<question>
+		<text>¿Qué papel juegan los servidores raíz en el proceso de resolución DNS?</text>
+		<option letter="a" correct="true">Proporcionan referencias a los servidores TLD</option>
+		<option letter="b" correct="false">Almacenan todos los registros de dominios existentes</option>
+		<option letter="c" correct="false">Solo gestionan dominios gubernamentales</option>
+		<option letter="d" correct="false">Se encargan únicamente de la resolución inversa</option>
+	</question>
+	<question>
+		<text>¿Qué aspecto caracteriza a una tendencia actual en alojamiento de aplicaciones?</text>
+		<option letter="a" correct="false">Abandonar completamente los servicios en la nube</option>
+		<option letter="b" correct="false">Usar exclusivamente servidores físicos dedicados</option>
+		<option letter="c" correct="true">Mayor adopción de contenedores y microservicios</option>
+		<option letter="d" correct="false">Evitar la automatización de despliegues</option>
+	</question>
+	<question>
+		<text>¿Qué ocurre cuando un registro DNS no se encuentra en la caché local?</text>
+		<option letter="a" correct="false">El proceso de resolución falla inmediatamente</option>
+		<option letter="b" correct="false">Se utiliza siempre la última IP conocida</option>
+		<option letter="c" correct="false">Se crea automáticamente un registro temporal</option>
+		<option letter="d" correct="true">Se inicia una consulta a los servidores raíz o a otros servidores DNS</option>
+	</question>
+	<question>
+		<text>¿Qué característica define a Kubernetes?</text>
+		<option letter="a" correct="false">Es un tipo de registro DNS</option>
+		<option letter="b" correct="false">Es un servicio de correo electrónico</option>
+		<option letter="c" correct="true">Es una plataforma de orquestación de contenedores</option>
+		<option letter="d" correct="false">Es un proveedor de alojamiento físico</option>
+	</question>
+	<question>
+		<text>¿Qué tipo de modelo de servicio en la nube permite al cliente centrarse solo en desarrollar aplicaciones?</text>
+		<option letter="a" correct="false">IaaS</option>
+		<option letter="b" correct="true">PaaS</option>
+		<option letter="c" correct="false">SaaS</option>
+		<option letter="d" correct="false">Hosting in-house</option>
+	</question>
+	<question>
+		<text>¿Qué tipo de registro DNS se utiliza típicamente para verificaciones de dominio o configuraciones de seguridad de correo?</text>
+		<option letter="a" correct="true">TXT</option>
+		<option letter="b" correct="false">A</option>
+		<option letter="c" correct="false">CNAME</option>
+		<option letter="d" correct="false">MX</option>
+	</question>
+	<question>
+		<text>¿Qué sucede en una transferencia de zona DNS?</text>
+		<option letter="a" correct="false">Se borra toda la información de la zona primaria</option>
+		<option letter="b" correct="false">Se intercambian los roles entre servidor primario y secundario</option>
+		<option letter="c" correct="true">Se copia la información de la zona primaria a la secundaria</option>
+		<option letter="d" correct="false">Se crea una nueva zona con configuración diferente</option>
+	</question>
+	<question>
+		<text>¿Qué ventaja tiene el uso de una zona secundaria en DNS?</text>
+		<option letter="a" correct="false">Permite modificar registros sin afectar a la zona primaria</option>
+		<option letter="b" correct="false">Elimina la necesidad de transferencias de zona</option>
+		<option letter="c" correct="true">Equilibra la carga de consultas y sirve como respaldo</option>
+		<option letter="d" correct="false">Reduce el tiempo de propagación de los cambios DNS</option>
+	</question>
+</exam>

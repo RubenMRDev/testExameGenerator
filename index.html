@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
   <title>Examen Tipo Test</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -12,6 +13,21 @@
 
     <div id="main-menu" class="text-center">
       <label class="block mb-2 text-lg font-medium">Selecciona el fichero XML:</label>
+      
+      <!-- Botones para cargar los XML predeterminados -->
+      <div class="mb-4 space-y-2">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="loadXML('xmls/CDVExamenClaude.xml')">
+          Control De Versiones
+        </button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="loadXML('xmls/dnsExamenClaude.xml')">
+          DNS
+        </button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="loadXML('xmls/ftpExamenClaude.xml')">
+          FTP
+        </button>
+      </div>
+
+      <!-- Opción para cargar un XML desde el equipo -->
       <input type="file" id="xmlFile" accept=".xml" class="mb-4 p-2 border rounded">
       <button id="loadExam" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
         Cargar Examen
@@ -49,6 +65,21 @@
     let correctAnswers = 0;
     let wrongQuestions = [];
     let selectedAnswer = null;
+
+    // Función para cargar un XML directamente desde la ruta
+    function loadXML(filePath) {
+      const reader = new FileReader();
+      fetch(filePath)
+        .then(response => response.text())
+        .then(xmlText => {
+          const parser = new DOMParser();
+          const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+          loadExam(xmlDoc);
+        })
+        .catch(error => {
+          alert('Error al cargar el archivo XML.');
+        });
+    }
 
     document.getElementById('loadExam').addEventListener('click', function () {
       const fileInput = document.getElementById('xmlFile');
@@ -125,7 +156,7 @@
 
       // Reset button container to show Accept Answer button
       const buttonContainer = document.getElementById('button-container');
-      buttonContainer.innerHTML = `
+      buttonContainer.innerHTML = ` 
         <button id="acceptAnswer" class="bg-blue-500 text-white px-4 py-2 rounded" disabled>
           Aceptar Respuesta
         </button>
@@ -155,7 +186,7 @@
       
       // Replace Accept Answer button with Next Question button
       const buttonContainer = document.getElementById('button-container');
-      buttonContainer.innerHTML = `
+      buttonContainer.innerHTML = ` 
         <button id="nextQuestion" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
           Siguiente Pregunta
         </button>
