@@ -6,23 +6,26 @@
   <link rel="shortcut icon" href="icon.png" type="image/x-icon">
   <title>Examen Tipo Test</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
   <div class="container mx-auto p-6 max-w-lg bg-white rounded-lg shadow-lg">
-    <h1 class="text-3xl font-bold text-center mb-4">Examen Tipo Test</h1>
+    <div class="flex justify-between items-center mb-4">
+      <h1 class="text-3xl font-bold text-center">Examen Tipo Test</h1>
+    </div>
 
     <div id="main-menu" class="text-center">
-      <label class="block mb-2 text-lg font-medium">Selecciona el fichero XML:</label>
+      <label class="block mb-2 text-lg font-medium">Selecciona el examen:</label>
       
       <!-- Botones para cargar los XML predeterminados -->
       <div class="mb-4 space-y-2">
-        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="loadXML('xmls/CDVExamenClaude.xml')">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="loadXML('xmls/cdv.xml')">
           Control De Versiones
         </button>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="loadXML('xmls/dnsExamenClaude.xml')">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="loadXML('xmls/dns.xml')">
           DNS
         </button>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="loadXML('xmls/ftpExamenClaude.xml')">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onclick="loadXML('xmls/ftp.xml')">
           FTP
         </button>
       </div>
@@ -65,6 +68,11 @@
     let correctAnswers = 0;
     let wrongQuestions = [];
     let selectedAnswer = null;
+    let examCounts = {
+      'Control De Versiones': 0,
+      'DNS': 0,
+      'FTP': 0
+    };
 
     // Función para cargar un XML directamente desde la ruta
     function loadXML(filePath) {
@@ -74,30 +82,14 @@
         .then(xmlText => {
           const parser = new DOMParser();
           const xmlDoc = parser.parseFromString(xmlText, "text/xml");
-          loadExam(xmlDoc);
+          loadExam(xmlDoc, filePath);
         })
         .catch(error => {
           alert('Error al cargar el archivo XML.');
         });
     }
 
-    document.getElementById('loadExam').addEventListener('click', function () {
-      const fileInput = document.getElementById('xmlFile');
-      if (fileInput.files.length === 0) {
-        alert('Por favor, selecciona un fichero XML.');
-        return;
-      }
-      const file = fileInput.files[0];
-      const reader = new FileReader();
-      reader.onload = function (e) {
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(e.target.result, "text/xml");
-        loadExam(xmlDoc);
-      }
-      reader.readAsText(file);
-    });
-
-    function loadExam(xml) {
+    function loadExam(xml, examName) {
       questions = [];
       currentQuestionIndex = 0;
       correctAnswers = 0;
@@ -119,6 +111,15 @@
           options.push({ letter, text, isCorrect });
         }
         questions.push({ questionText, options, correctOption });
+      }
+
+      // Increment exam count
+      if (examName === 'xmls/CDVExamenClaude.xml') {
+        examCounts['Control De Versiones']++;
+      } else if (examName === 'xmls/dns.xml') {
+        examCounts['DNS']++;
+      } else if (examName === 'xmls/ftp.xml') {
+        examCounts['FTP']++;
       }
 
       document.getElementById('main-menu').classList.add('hidden');
@@ -230,6 +231,19 @@
       document.getElementById('result').classList.add('hidden');
       document.getElementById('main-menu').classList.remove('hidden');
       document.getElementById('xmlFile').value = "";
+    });
+
+    // Mostrar la alerta de SweetAlert cuando se hace clic en el botón "Más Información"
+    document.getElementById('infoBtn').addEventListener('click', function() {
+      Swal.fire({
+        title: 'Historial',
+        html: `
+          <p>Control De Versiones: ${examCounts['Control De Versiones']} veces</p>
+          <p>DNS: ${examCounts['DNS']} veces</p>
+          <p>FTP: ${examCounts['FTP']} veces</p>
+        `,
+        icon: 'info'
+      });
     });
   </script>
 </body>

@@ -1,0 +1,352 @@
+<exam>
+  <question>
+    <text>Pregunta 1: ¿Qué es la transferencia de archivos?</text>
+    <option letter="a" correct="true">El proceso de mover datos entre sistemas</option>
+    <option letter="b" correct="false">La edición de archivos en un servidor</option>
+    <option letter="c" correct="false">El cifrado de datos</option>
+    <option letter="d" correct="false">La instalación de software</option>
+  </question>
+  <question>
+    <text>Pregunta 2: ¿Cuál es uno de los requisitos previos para utilizar un servicio de transferencia de archivos?</text>
+    <option letter="a" correct="false">Uso exclusivo de interfaces gráficas</option>
+    <option letter="b" correct="false">Conocimiento avanzado de programación</option>
+    <option letter="c" correct="false">Hardware especializado</option>
+    <option letter="d" correct="true">Acceso a la línea de comandos</option>
+  </question>
+  <question>
+    <text>Pregunta 3: En sistemas Linux, ¿qué comando se utiliza para actualizar la lista de paquetes disponibles?</text>
+    <option letter="a" correct="false">sudo apt upgrade</option>
+    <option letter="b" correct="false">sudo apt install</option>
+    <option letter="c" correct="true">sudo apt update</option>
+    <option letter="d" correct="false">sudo apt-get remove</option>
+  </question>
+  <question>
+    <text>Pregunta 4: ¿Qué software se recomienda instalar en Linux para disponer de un servidor FTP según el manual?</text>
+    <option letter="a" correct="true">vsftpd</option>
+    <option letter="b" correct="false">FileZilla Server</option>
+    <option letter="c" correct="false">OpenSSH</option>
+    <option letter="d" correct="false">ProFTPD</option>
+  </question>
+  <question>
+    <text>Pregunta 5: ¿Qué comando se utiliza en Linux para instalar el servidor FTP vsftpd?</text>
+    <option letter="a" correct="false">sudo apt update vsftpd</option>
+    <option letter="b" correct="true">sudo apt install vsftpd</option>
+    <option letter="c" correct="false">sudo install vsftpd</option>
+    <option letter="d" correct="false">apt-get vsftpd install</option>
+  </question>
+  <question>
+    <text>Pregunta 6: En sistemas Windows, ¿qué servidor FTP se menciona en el manual?</text>
+    <option letter="a" correct="false">vsftpd</option>
+    <option letter="b" correct="false">ProFTPD</option>
+    <option letter="c" correct="false">OpenSSH</option>
+    <option letter="d" correct="true">FileZilla Server</option>
+  </question>
+  <question>
+    <text>Pregunta 7: ¿Qué tipos de usuarios se pueden configurar para un servicio de transferencia de archivos?</text>
+    <option letter="a" correct="false">Solo usuarios locales</option>
+    <option letter="b" correct="false">Usuarios administrativos</option>
+    <option letter="c" correct="true">Usuarios anónimos, locales y virtuales</option>
+    <option letter="d" correct="false">Usuarios invitados y registrados</option>
+  </question>
+  <question>
+    <text>Pregunta 8: ¿Qué comando se utiliza para crear un usuario en Linux destinado al FTP?</text>
+    <option letter="a" correct="true">useradd -m usuarioftp</option>
+    <option letter="b" correct="false">adduser ftp</option>
+    <option letter="c" correct="false">createuser ftp</option>
+    <option letter="d" correct="false">ftpuser add</option>
+  </question>
+  <question>
+    <text>Pregunta 9: ¿Qué comando se utiliza para establecer la contraseña de un usuario creado para el FTP en Linux?</text>
+    <option letter="a" correct="false">setpass usuarioftp</option>
+    <option letter="b" correct="true">passwd usuarioftp</option>
+    <option letter="c" correct="false">password usuarioftp</option>
+    <option letter="d" correct="false">chmod usuarioftp</option>
+  </question>
+  <question>
+    <text>Pregunta 10: En el modo activo de conexión FTP, ¿quién inicia la conexión para el intercambio de datos?</text>
+    <option letter="a" correct="false">El cliente FTP</option>
+    <option letter="b" correct="false">Ambos inician simultáneamente</option>
+    <option letter="c" correct="true">El servidor FTP</option>
+    <option letter="d" correct="false">El router intermedio</option>
+  </question>
+  <question>
+    <text>Pregunta 11: En el modo pasivo de conexión FTP, ¿quién inicia la conexión de datos?</text>
+    <option letter="a" correct="false">El servidor FTP</option>
+    <option letter="b" correct="false">El usuario remoto</option>
+    <option letter="c" correct="false">El administrador de red</option>
+    <option letter="d" correct="true">El cliente FTP</option>
+  </question>
+  <question>
+    <text>Pregunta 12: ¿Cuál es el puerto utilizado generalmente para la conexión de comandos en FTP?</text>
+    <option letter="a" correct="true">21</option>
+    <option letter="b" correct="false">22</option>
+    <option letter="c" correct="false">20</option>
+    <option letter="d" correct="false">25</option>
+  </question>
+  <question>
+    <text>Pregunta 13: En el modo pasivo, ¿qué debe configurar el servidor para las conexiones de datos?</text>
+    <option letter="a" correct="false">El puerto 21</option>
+    <option letter="b" correct="true">Un rango de puertos, por ejemplo, 50000-51000</option>
+    <option letter="c" correct="false">El puerto 22</option>
+    <option letter="d" correct="false">Ningún puerto, usa el puerto del cliente</option>
+  </question>
+  <question>
+    <text>Pregunta 14: ¿Qué modo de conexión es más adecuado para clientes ubicados detrás de firewalls o NAT?</text>
+    <option letter="a" correct="false">Modo activo</option>
+    <option letter="b" correct="false">Modo mixto</option>
+    <option letter="c" correct="true">Modo pasivo</option>
+    <option letter="d" correct="false">Modo seguro</option>
+  </question>
+  <question>
+    <text>Pregunta 15: ¿Cómo se configura el modo pasivo en el cliente FileZilla?</text>
+    <option letter="a" correct="false">Mediante el menú "Archivo > Opciones"</option>
+    <option letter="b" correct="false">A través de comandos en la terminal</option>
+    <option letter="c" correct="false">No se puede configurar</option>
+    <option letter="d" correct="true">A través del menú "Edición > Configuración > Transferencias FTP"</option>
+  </question>
+  <question>
+    <text>Pregunta 16: En una sesión FTP en terminal, ¿qué comando desactiva el modo pasivo?</text>
+    <option letter="a" correct="true">passive off</option>
+    <option letter="b" correct="false">passive on</option>
+    <option letter="c" correct="false">mode active</option>
+    <option letter="d" correct="false">set active</option>
+  </question>
+  <question>
+    <text>Pregunta 17: ¿Qué comando se utiliza para subir un archivo en una sesión FTP desde la línea de comandos?</text>
+    <option letter="a" correct="false">upload archivo.txt</option>
+    <option letter="b" correct="true">put archivo.txt</option>
+    <option letter="c" correct="false">send archivo.txt</option>
+    <option letter="d" correct="false">copy archivo.txt</option>
+  </question>
+  <question>
+    <text>Pregunta 18: ¿Qué comando se utiliza para descargar un archivo en una sesión FTP de línea de comandos?</text>
+    <option letter="a" correct="false">receive archivo.txt</option>
+    <option letter="b" correct="false">fetch archivo.txt</option>
+    <option letter="c" correct="true">get archivo.txt</option>
+    <option letter="d" correct="false">download archivo.txt</option>
+  </question>
+  <question>
+    <text>Pregunta 19: ¿Cuál es el comando para finalizar una sesión FTP en terminal?</text>
+    <option letter="a" correct="false">exit now</option>
+    <option letter="b" correct="false">quit</option>
+    <option letter="c" correct="false">close</option>
+    <option letter="d" correct="true">bye</option>
+  </question>
+  <question>
+    <text>Pregunta 20: ¿Cómo se puede integrar el servicio FTP con un servidor web?</text>
+    <option letter="a" correct="true">Configurando el servidor web para apuntar al directorio FTP</option>
+    <option letter="b" correct="false">Instalando un plugin de FTP en el navegador</option>
+    <option letter="c" correct="false">Utilizando un servicio de correo</option>
+    <option letter="d" correct="false">Habilitando el modo seguro</option>
+  </question>
+  <question>
+    <text>Pregunta 21: ¿Qué URL se utiliza para acceder al servicio FTP a través de un navegador?</text>
+    <option letter="a" correct="false">http://usuario@servidor.com</option>
+    <option letter="b" correct="true">ftp://usuario@servidor.com</option>
+    <option letter="c" correct="false">sftp://usuario@servidor.com</option>
+    <option letter="d" correct="false">ftps://usuario@servidor.com</option>
+  </question>
+  <question>
+    <text>Pregunta 22: ¿Qué comando se utiliza para copiar recursivamente un proyecto al servidor en el despliegue de una aplicación web?</text>
+    <option letter="a" correct="false">scp proyecto/ usuario@servidor:/var/www/html</option>
+    <option letter="b" correct="false">ftp proyecto/ usuario@servidor:/var/www/html</option>
+    <option letter="c" correct="true">scp -r proyecto/ usuario@servidor:/var/www/html</option>
+    <option letter="d" correct="false">copy -r proyecto/ usuario@servidor:/var/www/html</option>
+  </question>
+  <question>
+    <text>Pregunta 23: ¿Qué comando se utiliza para cambiar permisos de archivos de forma recursiva en Linux?</text>
+    <option letter="a" correct="false">chmod 755 /var/www/html/proyecto</option>
+    <option letter="b" correct="false">chown -R 755 /var/www/html/proyecto</option>
+    <option letter="c" correct="false">chmod -R 777 /var/www/html/proyecto</option>
+    <option letter="d" correct="true">chmod -R 755 /var/www/html/proyecto</option>
+  </question>
+  <question>
+    <text>Pregunta 24: ¿Qué protocolo utiliza SFTP para asegurar las transferencias de archivos?</text>
+    <option letter="a" correct="true">SSH</option>
+    <option letter="b" correct="false">TLS</option>
+    <option letter="c" correct="false">FTP</option>
+    <option letter="d" correct="false">HTTP</option>
+  </question>
+  <question>
+    <text>Pregunta 25: ¿Cuál es una de las ventajas principales de utilizar SFTP?</text>
+    <option letter="a" correct="false">Es más rápido que FTP</option>
+    <option letter="b" correct="true">Encripta tanto las credenciales como los datos transferidos</option>
+    <option letter="c" correct="false">No requiere autenticación</option>
+    <option letter="d" correct="false">No necesita configuración de puertos</option>
+  </question>
+  <question>
+    <text>Pregunta 26: ¿En qué puerto opera típicamente SFTP?</text>
+    <option letter="a" correct="false">El puerto 21</option>
+    <option letter="b" correct="false">El puerto 25</option>
+    <option letter="c" correct="true">El puerto 22</option>
+    <option letter="d" correct="false">El puerto 443</option>
+  </question>
+  <question>
+    <text>Pregunta 27: Para habilitar SFTP en Linux, ¿qué paquete se debe instalar?</text>
+    <option letter="a" correct="false">ftp-server</option>
+    <option letter="b" correct="false">vsftpd</option>
+    <option letter="c" correct="false">sftp-server</option>
+    <option letter="d" correct="true">openssh-server</option>
+  </question>
+  <question>
+    <text>Pregunta 28: ¿Qué comando activa el servicio SSH para que inicie automáticamente al arrancar el sistema?</text>
+    <option letter="a" correct="true">sudo systemctl enable ssh</option>
+    <option letter="b" correct="false">sudo systemctl start ssh</option>
+    <option letter="c" correct="false">ssh-enable</option>
+    <option letter="d" correct="false">enable sshd</option>
+  </question>
+  <question>
+    <text>Pregunta 29: ¿Qué comando inicia el servicio SSH en Linux?</text>
+    <option letter="a" correct="false">sudo systemctl run ssh</option>
+    <option letter="b" correct="true">sudo systemctl start ssh</option>
+    <option letter="c" correct="false">sudo service sshd</option>
+    <option letter="d" correct="false">start ssh</option>
+  </question>
+  <question>
+    <text>Pregunta 30: ¿Qué comando se utiliza para iniciar una sesión SFTP desde un cliente?</text>
+    <option letter="a" correct="false">ftp usuario@servidor.com</option>
+    <option letter="b" correct="false">scp usuario@servidor.com</option>
+    <option letter="c" correct="true">sftp usuario@servidor.com</option>
+    <option letter="d" correct="false">ssh usuario@servidor.com</option>
+  </question>
+  <question>
+    <text>Pregunta 31: ¿Qué es FTPS?</text>
+    <option letter="a" correct="false">Un protocolo de transferencia sin cifrado</option>
+    <option letter="b" correct="false">Un servicio de correo</option>
+    <option letter="c" correct="false">Una versión antigua de FTP</option>
+    <option letter="d" correct="true">Extiende FTP con soporte para TLS/SSL</option>
+  </question>
+  <question>
+    <text>Pregunta 32: ¿Cuál es una ventaja de utilizar FTPS?</text>
+    <option letter="a" correct="true">Compatibilidad con la mayoría de los clientes FTP existentes</option>
+    <option letter="b" correct="false">No requiere configuración de certificados</option>
+    <option letter="c" correct="false">Opera exclusivamente en modo pasivo</option>
+    <option letter="d" correct="false">Elimina la necesidad de autenticación</option>
+  </question>
+  <question>
+    <text>Pregunta 33: Para configurar FTPS, ¿qué acción se debe realizar en el servidor?</text>
+    <option letter="a" correct="false">Reinstalar el servidor FTP</option>
+    <option letter="b" correct="true">Editar el archivo de configuración para habilitar TLS</option>
+    <option letter="c" correct="false">Actualizar el sistema operativo</option>
+    <option letter="d" correct="false">Cambiar el puerto 21</option>
+  </question>
+  <question>
+    <text>Pregunta 34: ¿Qué se debe generar o cargar para poder utilizar TLS en FTPS?</text>
+    <option letter="a" correct="false">Una clave de acceso</option>
+    <option letter="b" correct="false">Un archivo de configuración</option>
+    <option letter="c" correct="true">Un certificado SSL/TLS</option>
+    <option letter="d" correct="false">Una contraseña encriptada</option>
+  </question>
+  <question>
+    <text>Pregunta 35: ¿Cuál es uno de los beneficios de usar SFTP sobre FTP?</text>
+    <option letter="a" correct="false">Mayor velocidad</option>
+    <option letter="b" correct="false">Menor consumo de ancho de banda</option>
+    <option letter="c" correct="false">Menos comandos necesarios</option>
+    <option letter="d" correct="true">La encriptación de credenciales y datos</option>
+  </question>
+  <question>
+    <text>Pregunta 36: ¿Qué medida de seguridad se recomienda para proteger el servicio de transferencia de archivos?</text>
+    <option letter="a" correct="true">Utilizar contraseñas robustas</option>
+    <option letter="b" correct="false">Permitir accesos ilimitados</option>
+    <option letter="c" correct="false">Deshabilitar la autenticación</option>
+    <option letter="d" correct="false">Usar contraseñas simples</option>
+  </question>
+  <question>
+    <text>Pregunta 37: ¿Qué recomendación se da respecto a la autenticación de usuarios en un servicio de transferencia de archivos?</text>
+    <option letter="a" correct="false">Permitir accesos anónimos ilimitados</option>
+    <option letter="b" correct="true">Autenticar solo a usuarios confiables</option>
+    <option letter="c" correct="false">Compartir credenciales entre usuarios</option>
+    <option letter="d" correct="false">Usar autenticación automática</option>
+  </question>
+  <question>
+    <text>Pregunta 38: ¿Cómo se puede limitar el acceso no autorizado a un servidor FTP?</text>
+    <option letter="a" correct="false">Deshabilitando la autenticación</option>
+    <option letter="b" correct="false">Usando solo modo activo</option>
+    <option letter="c" correct="true">Limitando las direcciones IP que pueden conectarse</option>
+    <option letter="d" correct="false">Aumentando el rango de puertos</option>
+  </question>
+  <question>
+    <text>Pregunta 39: ¿Qué acción se recomienda para detectar actividad sospechosa en un servidor de transferencia de archivos?</text>
+    <option letter="a" correct="false">Desactivar el firewall</option>
+    <option letter="b" correct="false">Incrementar el tamaño del disco</option>
+    <option letter="c" correct="false">Limitar la cantidad de usuarios conectados</option>
+    <option letter="d" correct="true">Monitorizar regularmente los registros del servidor</option>
+  </question>
+  <question>
+    <text>Pregunta 40: ¿Por qué es importante documentar los procesos de configuración del servicio de transferencia de archivos?</text>
+    <option letter="a" correct="true">Para mantener un registro y facilitar la solución de problemas</option>
+    <option letter="b" correct="false">Para ocultar la configuración del sistema</option>
+    <option letter="c" correct="false">Para reducir el rendimiento del servidor</option>
+    <option letter="d" correct="false">Para complicar la administración</option>
+  </question>
+  <question>
+    <text>Pregunta 41: ¿Dónde se encuentra generalmente el archivo de configuración de vsftpd?</text>
+    <option letter="a" correct="false">/usr/local/vsftpd.conf</option>
+    <option letter="b" correct="true">/etc/vsftpd.conf</option>
+    <option letter="c" correct="false">/var/log/vsftpd.conf</option>
+    <option letter="d" correct="false">/home/vsftpd.conf</option>
+  </question>
+  <question>
+    <text>Pregunta 42: ¿Qué comando se utiliza para detener el servicio vsftpd en Linux?</text>
+    <option letter="a" correct="false">sudo service start vsftpd</option>
+    <option letter="b" correct="false">sudo systemctl enable vsftpd</option>
+    <option letter="c" correct="true">sudo systemctl stop vsftpd</option>
+    <option letter="d" correct="false">stop vsftpd</option>
+  </question>
+  <question>
+    <text>Pregunta 43: ¿Qué ventaja ofrece el uso de herramientas gráficas como FileZilla?</text>
+    <option letter="a" correct="false">Requieren mayor conocimiento técnico</option>
+    <option letter="b" correct="false">Incrementan la seguridad automáticamente</option>
+    <option letter="c" correct="false">Operan sin necesidad de red</option>
+    <option letter="d" correct="true">Facilitan la configuración y uso del servicio FTP</option>
+  </question>
+  <question>
+    <text>Pregunta 44: En una sesión SFTP, ¿qué comando permite listar los archivos y directorios en el servidor?</text>
+    <option letter="a" correct="true">ls</option>
+    <option letter="b" correct="false">dir</option>
+    <option letter="c" correct="false">list</option>
+    <option letter="d" correct="false">show</option>
+  </question>
+  <question>
+    <text>Pregunta 45: ¿Qué comando SFTP se utiliza para subir un archivo al servidor?</text>
+    <option letter="a" correct="false">upload archivo_local.txt</option>
+    <option letter="b" correct="true">put archivo_local.txt</option>
+    <option letter="c" correct="false">send archivo_local.txt</option>
+    <option letter="d" correct="false">copy archivo_local.txt</option>
+  </question>
+  <question>
+    <text>Pregunta 46: En una sesión SFTP, ¿qué comando se utiliza para descargar un archivo del servidor?</text>
+    <option letter="a" correct="false">fetch archivo_remoto.txt</option>
+    <option letter="b" correct="false">receive archivo_remoto.txt</option>
+    <option letter="c" correct="true">get archivo_remoto.txt</option>
+    <option letter="d" correct="false">download archivo_remoto.txt</option>
+  </question>
+  <question>
+    <text>Pregunta 47: ¿Cómo se finaliza una sesión SFTP correctamente?</text>
+    <option letter="a" correct="false">bye</option>
+    <option letter="b" correct="false">quit</option>
+    <option letter="c" correct="false">close</option>
+    <option letter="d" correct="true">exit</option>
+  </question>
+  <question>
+    <text>Pregunta 48: ¿Qué comando permite copiar recursivamente un directorio en una operación de transferencia segura?</text>
+    <option letter="a" correct="true">scp -r</option>
+    <option letter="b" correct="false">scp -R</option>
+    <option letter="c" correct="false">sftp -r</option>
+    <option letter="d" correct="false">cp -r</option>
+  </question>
+  <question>
+    <text>Pregunta 49: ¿Cuál es uno de los principales beneficios de utilizar protocolos seguros en la transferencia de archivos?</text>
+    <option letter="a" correct="false">Mayor velocidad de transferencia</option>
+    <option letter="b" correct="true">Protección de la integridad y confidencialidad de los datos</option>
+    <option letter="c" correct="false">Menor uso de recursos</option>
+    <option letter="d" correct="false">Facilidad de configuración</option>
+  </question>
+  <question>
+    <text>Pregunta 50: ¿Qué protocolo de seguridad utiliza FTPS para proteger las conexiones?</text>
+    <option letter="a" correct="false">SSH</option>
+    <option letter="b" correct="false">IPSec</option>
+    <option letter="c" correct="true">TLS/SSL</option>
+    <option letter="d" correct="false">WPA2</option>
+  </question>
+</exam>

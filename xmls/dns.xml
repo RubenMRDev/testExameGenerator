@@ -1,0 +1,702 @@
+<exam>
+  <question>
+    <text>Pregunta 1: ¿Qué significan las siglas DNS?</text>
+    <option letter="a" correct="true">Domain Name System</option>
+    <option letter="b" correct="false">Digital Network Service</option>
+    <option letter="c" correct="false">Distributed Name Server</option>
+    <option letter="d" correct="false">Dynamic Name Service</option>
+  </question>
+  <question>
+    <text>Pregunta 2: ¿Cuál es la función principal del DNS?</text>
+    <option letter="a" correct="false">Convertir direcciones IP en nombres de dominio</option>
+    <option letter="b" correct="false">Gestionar el tráfico de red</option>
+    <option letter="c" correct="true">Resolver nombres de dominio a direcciones IP</option>
+    <option letter="d" correct="false">Almacenar información web</option>
+  </question>
+  <question>
+    <text>Pregunta 3: ¿Qué tipo de registro DNS se utiliza para asignar una dirección IPv4 a un nombre de dominio?</text>
+    <option letter="a" correct="false">Registro AAAA</option>
+    <option letter="b" correct="false">Registro MX</option>
+    <option letter="c" correct="false">Registro CNAME</option>
+    <option letter="d" correct="true">Registro A</option>
+  </question>
+  <question>
+    <text>Pregunta 4: ¿Qué registro DNS se utiliza para asignar una dirección IPv6 a un nombre de dominio?</text>
+    <option letter="a" correct="false">Registro NS</option>
+    <option letter="b" correct="true">Registro AAAA</option>
+    <option letter="c" correct="false">Registro TXT</option>
+    <option letter="d" correct="false">Registro PTR</option>
+  </question>
+  <question>
+    <text>Pregunta 5: ¿Qué registro DNS se utiliza para redireccionar un dominio a otro?</text>
+    <option letter="a" correct="true">Registro CNAME</option>
+    <option letter="b" correct="false">Registro MX</option>
+    <option letter="c" correct="false">Registro A</option>
+    <option letter="d" correct="false">Registro SOA</option>
+  </question>
+  <question>
+    <text>Pregunta 6: ¿Cuál es la función del registro MX en DNS?</text>
+    <option letter="a" correct="false">Definir el servidor de nombres autorizado</option>
+    <option letter="b" correct="false">Asignar alias a un dominio</option>
+    <option letter="c" correct="true">Especificar el servidor de correo</option>
+    <option letter="d" correct="false">Registrar la dirección IP</option>
+  </question>
+  <question>
+    <text>Pregunta 7: ¿Qué es un servidor DNS recursivo?</text>
+    <option letter="a" correct="false">Un servidor que almacena copias de páginas web</option>
+    <option letter="b" correct="false">Un servidor que distribuye tráfico web</option>
+    <option letter="c" correct="false">Un servidor que se encarga de realizar búsquedas completas</option>
+    <option letter="d" correct="true">Un servidor que realiza consultas en nombre del cliente</option>
+  </question>
+  <question>
+    <text>Pregunta 8: ¿Qué es un servidor DNS autoritativo?</text>
+    <option letter="a" correct="false">Un servidor que proporciona respuestas basadas en su propia zona</option>
+    <option letter="b" correct="true">Un servidor que redirige consultas a otros servidores</option>
+    <option letter="c" correct="false">Un servidor que almacena información en caché</option>
+    <option letter="d" correct="false">Un servidor que solo responde a consultas internas</option>
+  </question>
+  <question>
+    <text>Pregunta 9: ¿Qué significa el término "zona" en DNS?</text>
+    <option letter="a" correct="true">Una porción de la base de datos DNS gestionada por un servidor</option>
+    <option letter="b" correct="false">Una región geográfica en Internet</option>
+    <option letter="c" correct="false">Un tipo de registro DNS</option>
+    <option letter="d" correct="false">Un método de resolución</option>
+  </question>
+  <question>
+    <text>Pregunta 10: ¿Qué registro define la información principal sobre una zona DNS?</text>
+    <option letter="a" correct="false">Registro NS</option>
+    <option letter="b" correct="false">Registro MX</option>
+    <option letter="c" correct="true">Registro SOA</option>
+    <option letter="d" correct="false">Registro TXT</option>
+  </question>
+  <question>
+    <text>Pregunta 11: ¿Qué indica el valor TTL en un registro DNS?</text>
+    <option letter="a" correct="false">La prioridad de un servidor</option>
+    <option letter="b" correct="false">La cantidad de intentos de consulta</option>
+    <option letter="c" correct="false">La duración de la conexión</option>
+    <option letter="d" correct="true">El tiempo que una respuesta es almacenada en caché</option>
+  </question>
+  <question>
+    <text>Pregunta 12: ¿Qué tipo de consulta DNS solicita que el servidor realice todas las búsquedas necesarias?</text>
+    <option letter="a" correct="false">Consulta iterativa</option>
+    <option letter="b" correct="true">Consulta recursiva</option>
+    <option letter="c" correct="false">Consulta directa</option>
+    <option letter="d" correct="false">Consulta secundaria</option>
+  </question>
+  <question>
+    <text>Pregunta 13: ¿Qué es la propagación DNS?</text>
+    <option letter="a" correct="true">El proceso de actualizar los registros de un dominio en todos los servidores</option>
+    <option letter="b" correct="false">El mecanismo para acelerar la carga de páginas</option>
+    <option letter="c" correct="false">La replicación de datos entre clientes</option>
+    <option letter="d" correct="false">La transferencia de archivos de configuración</option>
+  </question>
+  <question>
+    <text>Pregunta 14: ¿Qué es un registro PTR en DNS?</text>
+    <option letter="a" correct="false">Un registro que asigna direcciones IP a nombres</option>
+    <option letter="b" correct="false">Un registro que se utiliza en DNSSEC</option>
+    <option letter="c" correct="true">Un registro que asigna nombres de dominio a direcciones IP en búsquedas inversas</option>
+    <option letter="d" correct="false">Un registro para alias</option>
+  </question>
+  <question>
+    <text>Pregunta 15: ¿Cuál de los siguientes servidores NO participa en el proceso de resolución de nombres DNS?</text>
+    <option letter="a" correct="false">Servidor raíz</option>
+    <option letter="b" correct="false">Servidor autoritativo</option>
+    <option letter="c" correct="false">Servidor DNS recursivo</option>
+    <option letter="d" correct="true">Servidor de correo</option>
+  </question>
+  <question>
+    <text>Pregunta 16: ¿Qué es un servidor raíz en DNS?</text>
+    <option letter="a" correct="false">Un servidor que administra la transferencia de zonas</option>
+    <option letter="b" correct="true">Un servidor que actúa como punto de partida para la resolución de nombres</option>
+    <option letter="c" correct="false">Un servidor que almacena correos electrónicos</option>
+    <option letter="d" correct="false">Un servidor que asigna direcciones IP</option>
+  </question>
+  <question>
+    <text>Pregunta 17: ¿Qué es la transferencia de zona en DNS?</text>
+    <option letter="a" correct="true">El proceso de replicar la información de una zona entre servidores</option>
+    <option letter="b" correct="false">La actualización de un registro A</option>
+    <option letter="c" correct="false">El cambio de dirección IP de un dominio</option>
+    <option letter="d" correct="false">La configuración de un servidor raíz</option>
+  </question>
+  <question>
+    <text>Pregunta 18: ¿Qué medida de seguridad se implementa en DNS para proteger la integridad de los datos?</text>
+    <option letter="a" correct="false">VPN</option>
+    <option letter="b" correct="false">Firewalls</option>
+    <option letter="c" correct="true">DNSSEC</option>
+    <option letter="d" correct="false">SSL/TLS</option>
+  </question>
+  <question>
+    <text>Pregunta 19: ¿Qué herramienta se utiliza para diagnosticar problemas de DNS?</text>
+    <option letter="a" correct="false">ping</option>
+    <option letter="b" correct="false">traceroute</option>
+    <option letter="c" correct="false">nslookup</option>
+    <option letter="d" correct="true">dig</option>
+  </question>
+  <question>
+    <text>Pregunta 20: ¿Qué protocolo utiliza principalmente el DNS para realizar consultas?</text>
+    <option letter="a" correct="false">TCP</option>
+    <option letter="b" correct="true">UDP</option>
+    <option letter="c" correct="false">HTTP</option>
+    <option letter="d" correct="false">FTP</option>
+  </question>
+  <question>
+    <text>Pregunta 21: ¿Qué comando permite verificar la resolución de un dominio desde la línea de comandos?</text>
+    <option letter="a" correct="true">nslookup</option>
+    <option letter="b" correct="false">ipconfig</option>
+    <option letter="c" correct="false">netstat</option>
+    <option letter="d" correct="false">route</option>
+  </question>
+  <question>
+    <text>Pregunta 22: ¿Qué registro DNS se utiliza para identificar servidores de nombres de un dominio?</text>
+    <option letter="a" correct="false">Registro A</option>
+    <option letter="b" correct="false">Registro MX</option>
+    <option letter="c" correct="true">Registro NS</option>
+    <option letter="d" correct="false">Registro CNAME</option>
+  </question>
+  <question>
+    <text>Pregunta 23: ¿Qué significa una respuesta NXDOMAIN en DNS?</text>
+    <option letter="a" correct="false">Que el servidor no respondió</option>
+    <option letter="b" correct="false">Que hubo un error de conexión</option>
+    <option letter="c" correct="false">Que la consulta fue redirigida</option>
+    <option letter="d" correct="true">Que el nombre de dominio no existe</option>
+  </question>
+  <question>
+    <text>Pregunta 24: ¿Qué servicio proporciona balanceo de carga en el DNS?</text>
+    <option letter="a" correct="false">DHCP</option>
+    <option letter="b" correct="true">Round Robin DNS</option>
+    <option letter="c" correct="false">NAT</option>
+    <option letter="d" correct="false">VPN</option>
+  </question>
+  <question>
+    <text>Pregunta 25: ¿Qué es un registro TXT en DNS?</text>
+    <option letter="a" correct="true">Un registro para texto asociado al dominio</option>
+    <option letter="b" correct="false">Un registro para transferir zonas</option>
+    <option letter="c" correct="false">Un registro para direcciones IPv6</option>
+    <option letter="d" correct="false">Un registro para correo</option>
+  </question>
+  <question>
+    <text>Pregunta 26: ¿Cuál es la finalidad de la resolución inversa en DNS?</text>
+    <option letter="a" correct="false">Convertir nombres de dominio en direcciones URL</option>
+    <option letter="b" correct="false">Asignar correos a direcciones IP</option>
+    <option letter="c" correct="true">Convertir direcciones IP en nombres de dominio</option>
+    <option letter="d" correct="false">Verificar certificados digitales</option>
+  </question>
+  <question>
+    <text>Pregunta 27: ¿Qué función cumple el registro SOA en una zona DNS?</text>
+    <option letter="a" correct="false">Define la dirección del servidor de correo</option>
+    <option letter="b" correct="false">Especifica las direcciones IP autorizadas</option>
+    <option letter="c" correct="false">Proporciona alias para el dominio</option>
+    <option letter="d" correct="true">Contiene información administrativa y de zona</option>
+  </question>
+  <question>
+    <text>Pregunta 28: ¿Qué es un subdominio?</text>
+    <option letter="a" correct="false">Un dominio de nivel superior</option>
+    <option letter="b" correct="true">Una subdivisión de un dominio principal</option>
+    <option letter="c" correct="false">Un registro especial de DNS</option>
+    <option letter="d" correct="false">Una extensión de internet</option>
+  </question>
+  <question>
+    <text>Pregunta 29: ¿Qué método de consulta DNS reduce la carga de red mediante el almacenamiento en caché?</text>
+    <option letter="a" correct="true">Resolución recursiva</option>
+    <option letter="b" correct="false">Resolución directa</option>
+    <option letter="c" correct="false">Consulta iterativa</option>
+    <option letter="d" correct="false">Transferencia de zona</option>
+  </question>
+  <question>
+    <text>Pregunta 30: ¿Qué componente de la infraestructura DNS almacena respuestas para acelerar futuras consultas?</text>
+    <option letter="a" correct="false">Servidor autoritativo</option>
+    <option letter="b" correct="false">Servidor raíz</option>
+    <option letter="c" correct="true">Resolver de caché</option>
+    <option letter="d" correct="false">Servidor de correo</option>
+  </question>
+  <question>
+    <text>Pregunta 31: ¿Cuál es la principal ventaja del DNS distribuido?</text>
+    <option letter="a" correct="false">Centralización de datos</option>
+    <option letter="b" correct="false">Mayor seguridad</option>
+    <option letter="c" correct="false">Facilidad de configuración</option>
+    <option letter="d" correct="true">Escalabilidad y redundancia</option>
+  </question>
+  <question>
+    <text>Pregunta 32: ¿Qué es un ataque de envenenamiento de caché DNS?</text>
+    <option letter="a" correct="false">Un ataque que bloquea el acceso a la red</option>
+    <option letter="b" correct="false">Una manipulación maliciosa de la caché DNS</option>
+    <option letter="c" correct="false">Un ataque por denegación de servicio</option>
+    <option letter="d" correct="true">Una manipulación maliciosa de la caché DNS para insertar datos falsos</option>
+  </question>
+  <question>
+    <text>Pregunta 33: ¿Qué protocolo se utiliza comúnmente para las transferencias de zona DNS seguras?</text>
+    <option letter="a" correct="true">TSIG</option>
+    <option letter="b" correct="false">SSL</option>
+    <option letter="c" correct="false">DNSSEC</option>
+    <option letter="d" correct="false">HTTPS</option>
+  </question>
+  <question>
+    <text>Pregunta 34: ¿Qué es DNSSEC?</text>
+    <option letter="a" correct="false">Un protocolo para acelerar la resolución DNS</option>
+    <option letter="b" correct="false">Una herramienta para monitorear el tráfico DNS</option>
+    <option letter="c" correct="true">Un conjunto de extensiones para asegurar la integridad de los datos DNS</option>
+    <option letter="d" correct="false">Un tipo de registro DNS</option>
+  </question>
+  <question>
+    <text>Pregunta 35: ¿Cuál es la función de un servidor de nombres autoritativo secundario?</text>
+    <option letter="a" correct="false">Almacenar registros de dominio en caché</option>
+    <option letter="b" correct="false">Resolver consultas recursivas</option>
+    <option letter="c" correct="false">Realizar transferencias de zona de forma manual</option>
+    <option letter="d" correct="true">Proveer redundancia y respaldo del servidor primario</option>
+  </question>
+  <question>
+    <text>Pregunta 36: ¿Qué se entiende por delegación en el contexto DNS?</text>
+    <option letter="a" correct="false">La eliminación de un registro</option>
+    <option letter="b" correct="true">La asignación de autoridad sobre una subzona a otro servidor</option>
+    <option letter="c" correct="false">La transferencia de datos encriptados</option>
+    <option letter="d" correct="false">La actualización de registros</option>
+  </question>
+  <question>
+    <text>Pregunta 37: ¿Qué registro se utiliza para verificar la autenticidad de un dominio mediante SPF?</text>
+    <option letter="a" correct="true">Registro TXT</option>
+    <option letter="b" correct="false">Registro MX</option>
+    <option letter="c" correct="false">Registro A</option>
+    <option letter="d" correct="false">Registro SRV</option>
+  </question>
+  <question>
+    <text>Pregunta 38: ¿Qué es un registro SRV en DNS?</text>
+    <option letter="a" correct="false">Un registro para direcciones IPv6</option>
+    <option letter="b" correct="false">Un registro para identificar servidores de nombres</option>
+    <option letter="c" correct="true">Un registro que define servicios y puertos asociados a un dominio</option>
+    <option letter="d" correct="false">Un registro para correo</option>
+  </question>
+  <question>
+    <text>Pregunta 39: ¿Qué impacto tiene un valor TTL muy bajo en un registro DNS?</text>
+    <option letter="a" correct="false">Mejora la velocidad de carga del sitio web</option>
+    <option letter="b" correct="false">Aumenta la seguridad de la transferencia de datos</option>
+    <option letter="c" correct="false">Reduce la capacidad de respuesta del servidor</option>
+    <option letter="d" correct="true">Aumenta la frecuencia de actualizaciones en la caché</option>
+  </question>
+  <question>
+    <text>Pregunta 40: ¿Cuál es la función de un registro de tipo ANY en DNS?</text>
+    <option letter="a" correct="false">Solicitar únicamente registros MX</option>
+    <option letter="b" correct="true">Solicitar todos los registros disponibles para un dominio</option>
+    <option letter="c" correct="false">Solicitar únicamente registros A</option>
+    <option letter="d" correct="false">Solicitar únicamente registros NS</option>
+  </question>
+  <question>
+    <text>Pregunta 41: ¿Qué es un "split-horizon DNS"?</text>
+    <option letter="a" correct="true">Una configuración que ofrece respuestas diferentes según la fuente de la consulta</option>
+    <option letter="b" correct="false">Un tipo de registro que combina múltiples respuestas</option>
+    <option letter="c" correct="false">Un mecanismo de encriptación de DNS</option>
+    <option letter="d" correct="false">Una técnica de balanceo de carga</option>
+  </question>
+  <question>
+    <text>Pregunta 42: ¿Cuál es la ventaja principal de utilizar servidores DNS distribuidos?</text>
+    <option letter="a" correct="false">Centralización de datos</option>
+    <option letter="b" correct="false">Facilidad de mantenimiento</option>
+    <option letter="c" correct="true">Redundancia y tolerancia a fallos</option>
+    <option letter="d" correct="false">Mayor velocidad en la red</option>
+  </question>
+  <question>
+    <text>Pregunta 43: ¿Qué significa "ANYcast" en el contexto de DNS?</text>
+    <option letter="a" correct="false">Una técnica de encriptación</option>
+    <option letter="b" correct="false">Una configuración de registro TXT</option>
+    <option letter="c" correct="false">Una estrategia de delegación</option>
+    <option letter="d" correct="true">Un método para distribuir cargas mediante una única dirección IP compartida</option>
+  </question>
+  <question>
+    <text>Pregunta 44: ¿Qué herramienta puede utilizarse para monitorear el rendimiento de un servidor DNS?</text>
+    <option letter="a" correct="false">Wireshark</option>
+    <option letter="b" correct="true">Nagios</option>
+    <option letter="c" correct="false">Apache</option>
+    <option letter="d" correct="false">MySQL</option>
+  </question>
+  <question>
+    <text>Pregunta 45: ¿Qué es un servidor de nombres caché?</text>
+    <option letter="a" correct="true">Un servidor que almacena respuestas DNS para acelerar futuras consultas</option>
+    <option letter="b" correct="false">Un servidor que actúa como autoritativo</option>
+    <option letter="c" correct="false">Un servidor que delega solicitudes a otros</option>
+    <option letter="d" correct="false">Un servidor que gestiona registros MX</option>
+  </question>
+  <question>
+    <text>Pregunta 46: ¿Qué ocurre durante una consulta iterativa en DNS?</text>
+    <option letter="a" correct="false">El servidor responde sin solicitar información adicional</option>
+    <option letter="b" correct="false">El servidor transfiere la consulta a otro dominio</option>
+    <option letter="c" correct="true">El servidor devuelve la mejor respuesta que tiene y remite al cliente a otro servidor si es necesario</option>
+    <option letter="d" correct="false">El servidor actualiza su caché automáticamente</option>
+  </question>
+  <question>
+    <text>Pregunta 47: ¿Cuál es el propósito de un registro de tipo DNAME en DNS?</text>
+    <option letter="a" correct="false">Redirigir correo electrónico</option>
+    <option letter="b" correct="false">Asignar direcciones IPv6</option>
+    <option letter="c" correct="false">Proveer servicios de seguridad</option>
+    <option letter="d" correct="true">Redirigir un subdominio completo a otro dominio</option>
+  </question>
+  <question>
+    <text>Pregunta 48: ¿Qué es la replicación de zona en DNS?</text>
+    <option letter="a" correct="false">La actualización de registros A y AAAA simultáneamente</option>
+    <option letter="b" correct="true">La copia de registros DNS de un servidor primario a secundarios</option>
+    <option letter="c" correct="false">La duplicación de registros TXT para seguridad</option>
+    <option letter="d" correct="false">La transferencia de datos mediante protocolo TCP</option>
+  </question>
+  <question>
+    <text>Pregunta 49: ¿Qué significa que un servidor DNS sea "autoritativo"?</text>
+    <option letter="a" correct="true">Que tiene autoridad para proporcionar respuestas definitivas para un dominio</option>
+    <option letter="b" correct="false">Que reenvía consultas a otros servidores</option>
+    <option letter="c" correct="false">Que almacena información en caché</option>
+    <option letter="d" correct="false">Que solo atiende a usuarios internos</option>
+  </question>
+  <question>
+    <text>Pregunta 50: ¿Qué función cumple un registro de tipo LOC en DNS?</text>
+    <option letter="a" correct="false">Define la ubicación geográfica de un servidor</option>
+    <option letter="b" correct="false">Asigna direcciones IP basadas en ubicación</option>
+    <option letter="c" correct="true">Proporciona información sobre la ubicación física de un dominio</option>
+    <option letter="d" correct="false">Registra la latencia del servidor</option>
+  </question>
+  <question>
+    <text>Pregunta 51: ¿Qué es una zona inversa en DNS?</text>
+    <option letter="a" correct="false">Una zona para gestionar nombres de dominio internacionales</option>
+    <option letter="b" correct="false">Una zona que almacena registros MX únicamente</option>
+    <option letter="c" correct="false">Una zona utilizada para registros de alias</option>
+    <option letter="d" correct="true">Una zona utilizada para la resolución inversa de direcciones IP</option>
+  </question>
+  <question>
+    <text>Pregunta 52: ¿Qué mecanismo ayuda a mitigar ataques de denegación de servicio en servidores DNS?</text>
+    <option letter="a" correct="false">Encriptación de registros</option>
+    <option letter="b" correct="true">Filtrado de tráfico y rate limiting</option>
+    <option letter="c" correct="false">Aumento del TTL</option>
+    <option letter="d" correct="false">Uso exclusivo de TCP</option>
+  </question>
+  <question>
+    <text>Pregunta 53: ¿Qué implica la técnica de "DNS round robin"?</text>
+    <option letter="a" correct="true">Distribuir múltiples direcciones IP para un mismo dominio en secuencia</option>
+    <option letter="b" correct="false">Delegar consultas a servidores externos</option>
+    <option letter="c" correct="false">Priorizar respuestas basadas en la ubicación</option>
+    <option letter="d" correct="false">Asignar registros MX de manera aleatoria</option>
+  </question>
+  <question>
+    <text>Pregunta 54: ¿Qué significa que un registro DNS esté "propagado"?</text>
+    <option letter="a" correct="false">Que ha sido eliminado de la caché</option>
+    <option letter="b" correct="false">Que solo está en el servidor primario</option>
+    <option letter="c" correct="true">Que se ha actualizado en todos los servidores a nivel mundial</option>
+    <option letter="d" correct="false">Que se ha replicado en el servidor raíz</option>
+  </question>
+  <question>
+    <text>Pregunta 55: ¿Qué función cumple el registro "CAA" en DNS?</text>
+    <option letter="a" correct="false">Especificar servidores de correo autorizados</option>
+    <option letter="b" correct="false">Definir el tiempo de vida de los registros</option>
+    <option letter="c" correct="false">Asignar alias a un dominio</option>
+    <option letter="d" correct="true">Indicar qué autoridades pueden emitir certificados para el dominio</option>
+  </question>
+  <question>
+    <text>Pregunta 56: ¿Qué significa la sigla SPF en registros DNS?</text>
+    <option letter="a" correct="false">Secure Post Format</option>
+    <option letter="b" correct="true">Sender Policy Framework</option>
+    <option letter="c" correct="false">System Protection Factor</option>
+    <option letter="d" correct="false">Server Protocol Framework</option>
+  </question>
+  <question>
+    <text>Pregunta 57: ¿Qué registro DNS se utiliza para direccionar servicios de VoIP?</text>
+    <option letter="a" correct="true">Registro SRV</option>
+    <option letter="b" correct="false">Registro A</option>
+    <option letter="c" correct="false">Registro MX</option>
+    <option letter="d" correct="false">Registro TXT</option>
+  </question>
+  <question>
+    <text>Pregunta 58: ¿Qué papel juega el DNS en la navegación por Internet?</text>
+    <option letter="a" correct="false">Administra el contenido de sitios web</option>
+    <option letter="b" correct="false">Almacena información del usuario</option>
+    <option letter="c" correct="true">Traduce nombres de dominio en direcciones IP</option>
+    <option letter="d" correct="false">Proporciona seguridad en las transacciones</option>
+  </question>
+  <question>
+    <text>Pregunta 59: ¿Qué puede causar un error "SERVFAIL" en una consulta DNS?</text>
+    <option letter="a" correct="false">Un dominio no registrado</option>
+    <option letter="b" correct="false">Una configuración de red incorrecta</option>
+    <option letter="c" correct="false">Un problema en la transferencia de zona</option>
+    <option letter="d" correct="true">Fallos en el servidor o problemas de configuración</option>
+  </question>
+  <question>
+    <text>Pregunta 60: ¿Cuál es el propósito de utilizar múltiples servidores DNS para un dominio?</text>
+    <option letter="a" correct="false">Reducir el tiempo de respuesta</option>
+    <option letter="b" correct="true">Garantizar redundancia y alta disponibilidad</option>
+    <option letter="c" correct="false">Aumentar el tráfico web</option>
+    <option letter="d" correct="false">Facilitar la actualización de registros</option>
+  </question>
+  <question>
+    <text>Pregunta 61: ¿Qué indica una consulta DNS "recursiva"?</text>
+    <option letter="a" correct="true">Que el servidor se encarga de obtener la respuesta completa</option>
+    <option letter="b" correct="false">Que el servidor solo busca en su caché</option>
+    <option letter="c" correct="false">Que la consulta se realiza entre servidores raíz</option>
+    <option letter="d" correct="false">Que la consulta se realiza sin interacción con otros servidores</option>
+  </question>
+  <question>
+    <text>Pregunta 62: ¿Cuál es la diferencia principal entre registros A y AAAA?</text>
+    <option letter="a" correct="false">A es para correos, AAAA para alias</option>
+    <option letter="b" correct="false">A utiliza TCP, AAAA utiliza UDP</option>
+    <option letter="c" correct="true">A asigna direcciones IPv4, AAAA asigna direcciones IPv6</option>
+    <option letter="d" correct="false">A es autoritativo, AAAA es recursivo</option>
+  </question>
+  <question>
+    <text>Pregunta 63: ¿Qué herramienta en línea permite comprobar la propagación DNS a nivel mundial?</text>
+    <option letter="a" correct="false">Google Analytics</option>
+    <option letter="b" correct="false">Server Monitor</option>
+    <option letter="c" correct="false">DNS Firewall</option>
+    <option letter="d" correct="true">DNS Checker</option>
+  </question>
+  <question>
+    <text>Pregunta 64: ¿Qué es un registro "ANAME" en DNS?</text>
+    <option letter="a" correct="false">Un registro para correo electrónico</option>
+    <option letter="b" correct="true">Un registro similar a CNAME que se usa en la raíz del dominio</option>
+    <option letter="c" correct="false">Un registro para direcciones IPv6</option>
+    <option letter="d" correct="false">Un registro para seguridad</option>
+  </question>
+  <question>
+    <text>Pregunta 65: ¿Qué es la técnica de "Anycast DNS"?</text>
+    <option letter="a" correct="true">Un método para dirigir consultas al servidor más cercano geográficamente</option>
+    <option letter="b" correct="false">Una técnica para almacenar registros en múltiples formatos</option>
+    <option letter="c" correct="false">Un protocolo para la transferencia de zonas</option>
+    <option letter="d" correct="false">Un mecanismo para encriptar las consultas</option>
+  </question>
+  <question>
+    <text>Pregunta 66: ¿Qué ocurre cuando se realiza una consulta a un dominio sin registros NS configurados?</text>
+    <option letter="a" correct="false">Se redirige automáticamente a un servidor raíz</option>
+    <option letter="b" correct="false">Se consulta al servidor de correo</option>
+    <option letter="c" correct="true">La consulta falla debido a la falta de servidores autorizados</option>
+    <option letter="d" correct="false">Se genera un registro CNAME por defecto</option>
+  </question>
+  <question>
+    <text>Pregunta 67: ¿Qué es un registro "NAPTR" en DNS?</text>
+    <option letter="a" correct="false">Un registro para direcciones IPv4</option>
+    <option letter="b" correct="false">Un registro para direcciones IPv6</option>
+    <option letter="c" correct="false">Un registro que define la zona de un dominio</option>
+    <option letter="d" correct="true">Un registro que se utiliza para la resolución de servicios y transformación de nombres</option>
+  </question>
+  <question>
+    <text>Pregunta 68: ¿Qué papel tiene el DNS en el funcionamiento del correo electrónico?</text>
+    <option letter="a" correct="false">Gestiona la autenticación de usuarios</option>
+    <option letter="b" correct="true">Determina a qué servidor se envía el correo mediante registros MX</option>
+    <option letter="c" correct="false">Cifra los mensajes</option>
+    <option letter="d" correct="false">Almacena los correos</option>
+  </question>
+  <question>
+    <text>Pregunta 69: ¿Qué significa "latency" en el contexto de DNS?</text>
+    <option letter="a" correct="true">El tiempo de respuesta de una consulta DNS</option>
+    <option letter="b" correct="false">La cantidad de registros en una zona</option>
+    <option letter="c" correct="false">La duración del cacheo</option>
+    <option letter="d" correct="false">El número de servidores en un clúster</option>
+  </question>
+  <question>
+    <text>Pregunta 70: ¿Qué efecto tiene la configuración incorrecta de registros NS?</text>
+    <option letter="a" correct="false">Aumenta la seguridad</option>
+    <option letter="b" correct="false">Mejora la propagación de la zona</option>
+    <option letter="c" correct="true">Puede provocar fallos en la resolución de nombres</option>
+    <option letter="d" correct="false">Optimiza el rendimiento de la red</option>
+  </question>
+  <question>
+    <text>Pregunta 71: ¿Cuál es el propósito de la configuración de "forwarders" en un servidor DNS?</text>
+    <option letter="a" correct="false">Bloquear consultas externas</option>
+    <option letter="b" correct="false">Permitir la transferencia de zona</option>
+    <option letter="c" correct="false">Almacenar registros de manera local</option>
+    <option letter="d" correct="true">Enviar consultas a servidores DNS externos cuando no se tiene la respuesta</option>
+  </question>
+  <question>
+    <text>Pregunta 72: ¿Qué es un registro de tipo "HINFO" en DNS?</text>
+    <option letter="a" correct="false">Un registro para correo electrónico</option>
+    <option letter="b" correct="true">Un registro que proporciona información sobre la configuración del hardware y software de un host</option>
+    <option letter="c" correct="false">Un registro para direcciones IPv6</option>
+    <option letter="d" correct="false">Un registro que asigna alias a un dominio</option>
+  </question>
+  <question>
+    <text>Pregunta 73: ¿Qué función cumple el protocolo EDNS en DNS?</text>
+    <option letter="a" correct="true">Permitir mensajes DNS de mayor tamaño y funciones extendidas</option>
+    <option letter="b" correct="false">Aumentar la seguridad de las consultas</option>
+    <option letter="c" correct="false">Limitar el tamaño de la caché</option>
+    <option letter="d" correct="false">Establecer conexiones cifradas</option>
+  </question>
+  <question>
+    <text>Pregunta 74: ¿Qué es una consulta "ANY" en DNS?</text>
+    <option letter="a" correct="false">Una consulta que solicita únicamente registros A</option>
+    <option letter="b" correct="false">Una consulta que se realiza a servidores autoritativos</option>
+    <option letter="c" correct="true">Una consulta que solicita todos los tipos de registros disponibles</option>
+    <option letter="d" correct="false">Una consulta que ignora la caché</option>
+  </question>
+  <question>
+    <text>Pregunta 75: ¿Qué se entiende por "propagación inversa" en DNS?</text>
+    <option letter="a" correct="false">La actualización de registros MX</option>
+    <option letter="b" correct="false">La replicación de zonas entre servidores</option>
+    <option letter="c" correct="false">La asignación de alias en registros CNAME</option>
+    <option letter="d" correct="true">La resolución de direcciones IP a nombres de dominio</option>
+  </question>
+  <question>
+    <text>Pregunta 76: ¿Qué componente en DNS se encarga de la seguridad y autenticación de las respuestas?</text>
+    <option letter="a" correct="false">Servidor raíz</option>
+    <option letter="b" correct="true">DNSSEC</option>
+    <option letter="c" correct="false">Servidor recursivo</option>
+    <option letter="d" correct="false">Registro TXT</option>
+  </question>
+  <question>
+    <text>Pregunta 77: ¿Qué es el "cache poisoning" en DNS?</text>
+    <option letter="a" correct="true">Una técnica maliciosa para insertar datos falsos en la caché de un servidor DNS</option>
+    <option letter="b" correct="false">Un método de encriptación de datos</option>
+    <option letter="c" correct="false">Una herramienta de diagnóstico</option>
+    <option letter="d" correct="false">Un registro de seguridad</option>
+  </question>
+  <question>
+    <text>Pregunta 78: ¿Qué significa la "resiliencia" en el contexto de servidores DNS?</text>
+    <option letter="a" correct="false">La capacidad de aumentar la velocidad de las consultas</option>
+    <option letter="b" correct="false">La facilidad de configuración</option>
+    <option letter="c" correct="true">La habilidad para mantener el servicio a pesar de fallos o ataques</option>
+    <option letter="d" correct="false">La capacidad de almacenar grandes volúmenes de datos</option>
+  </question>
+  <question>
+    <text>Pregunta 79: ¿Qué herramienta se utiliza para visualizar el tráfico DNS en tiempo real?</text>
+    <option letter="a" correct="false">Ping</option>
+    <option letter="b" correct="false">nslookup</option>
+    <option letter="c" correct="false">dig</option>
+    <option letter="d" correct="true">Wireshark</option>
+  </question>
+  <question>
+    <text>Pregunta 80: ¿Qué es un servidor DNS anycast?</text>
+    <option letter="a" correct="false">Un servidor que solo atiende a consultas internas</option>
+    <option letter="b" correct="true">Un servidor que comparte la misma dirección IP con otros servidores en ubicaciones diferentes</option>
+    <option letter="c" correct="false">Un servidor que almacena respuestas únicamente en caché</option>
+    <option letter="d" correct="false">Un servidor que se utiliza para pruebas</option>
+  </question>
+  <question>
+    <text>Pregunta 81: ¿Qué representa el registro "RP" en DNS?</text>
+    <option letter="a" correct="true">Un registro que especifica la información de la persona responsable de un dominio</option>
+    <option letter="b" correct="false">Un registro para direcciones IPv6</option>
+    <option letter="c" correct="false">Un registro para servicios de correo</option>
+    <option letter="d" correct="false">Un registro para encriptación</option>
+  </question>
+  <question>
+    <text>Pregunta 82: ¿Qué impacto tiene la duplicación de registros DNS en una zona?</text>
+    <option letter="a" correct="false">Mejora la seguridad</option>
+    <option letter="b" correct="false">Acelera la propagación</option>
+    <option letter="c" correct="true">Puede causar conflictos y errores en la resolución</option>
+    <option letter="d" correct="false">No tiene ningún efecto</option>
+  </question>
+  <question>
+    <text>Pregunta 83: ¿Qué es un registro "KX" en DNS?</text>
+    <option letter="a" correct="false">Un registro para direcciones IP</option>
+    <option letter="b" correct="false">Un registro para servidores de nombres</option>
+    <option letter="c" correct="false">Un registro para alias</option>
+    <option letter="d" correct="true">Un registro que especifica el servidor responsable del correo en un dominio</option>
+  </question>
+  <question>
+    <text>Pregunta 84: ¿Qué significa el proceso de "forward lookup" en DNS?</text>
+    <option letter="a" correct="false">Convertir direcciones IP en nombres de dominio</option>
+    <option letter="b" correct="true">Convertir nombres de dominio en direcciones IP</option>
+    <option letter="c" correct="false">Transferir registros entre servidores</option>
+    <option letter="d" correct="false">Consultar registros MX</option>
+  </question>
+  <question>
+    <text>Pregunta 85: ¿Qué es un "resolver" en el contexto de DNS?</text>
+    <option letter="a" correct="true">Es un componente que envía consultas DNS en nombre de un cliente</option>
+    <option letter="b" correct="false">Es un registro que almacena direcciones IP</option>
+    <option letter="c" correct="false">Es un protocolo para encriptar consultas</option>
+    <option letter="d" correct="false">Es una herramienta para actualizar registros</option>
+  </question>
+  <question>
+    <text>Pregunta 86: ¿Qué papel desempeña el protocolo UDP en DNS?</text>
+    <option letter="a" correct="false">Asegurar la integridad de los datos</option>
+    <option letter="b" correct="false">Establecer conexiones seguras</option>
+    <option letter="c" correct="true">Permitir la transmisión rápida de consultas y respuestas</option>
+    <option letter="d" correct="false">Gestionar la autenticación de usuarios</option>
+  </question>
+  <question>
+    <text>Pregunta 87: ¿Qué es un registro "X25" en DNS?</text>
+    <option letter="a" correct="false">Un registro para direcciones IP</option>
+    <option letter="b" correct="false">Un registro para servidores de nombres</option>
+    <option letter="c" correct="false">Un registro para alias</option>
+    <option letter="d" correct="true">Un registro obsoleto utilizado en redes X.25</option>
+  </question>
+  <question>
+    <text>Pregunta 88: ¿Qué significa "resolver split-view" en DNS?</text>
+    <option letter="a" correct="false">Un método para dividir el tráfico entre servidores raíz</option>
+    <option letter="b" correct="true">Una configuración que proporciona diferentes respuestas según la ubicación del solicitante</option>
+    <option letter="c" correct="false">Un mecanismo para acelerar la propagación de registros</option>
+    <option letter="d" correct="false">Una técnica para replicar zonas</option>
+  </question>
+  <question>
+    <text>Pregunta 89: ¿Qué es una zona maestra en DNS?</text>
+    <option letter="a" correct="true">La zona que contiene los registros originales y autorizados para un dominio</option>
+    <option letter="b" correct="false">Una zona que se replica automáticamente</option>
+    <option letter="c" correct="false">Una zona utilizada para pruebas</option>
+    <option letter="d" correct="false">Una zona que solo almacena registros en caché</option>
+  </question>
+  <question>
+    <text>Pregunta 90: ¿Qué implica una configuración errónea en el archivo de zona DNS?</text>
+    <option letter="a" correct="false">Mejora la velocidad de resolución</option>
+    <option letter="b" correct="false">Aumenta la redundancia del servidor</option>
+    <option letter="c" correct="true">Puede causar fallos en la resolución y errores de sintaxis</option>
+    <option letter="d" correct="false">No afecta el funcionamiento</option>
+  </question>
+  <question>
+    <text>Pregunta 91: ¿Qué es un registro "RPZ" en el contexto de DNS?</text>
+    <option letter="a" correct="false">Un registro para direcciones IPv4</option>
+    <option letter="b" correct="false">Un registro para servicios de correo</option>
+    <option letter="c" correct="false">Un registro para alias de dominio</option>
+    <option letter="d" correct="true">Un mecanismo para aplicar políticas de respuesta en sistemas de seguridad DNS</option>
+  </question>
+  <question>
+    <text>Pregunta 92: ¿Qué tipo de consulta DNS utiliza el protocolo TCP cuando la respuesta es demasiado grande para UDP?</text>
+    <option letter="a" correct="false">Consulta iterativa</option>
+    <option letter="b" correct="true">Consulta TCP</option>
+    <option letter="c" correct="false">Consulta recursiva</option>
+    <option letter="d" correct="false">Consulta Anycast</option>
+  </question>
+  <question>
+    <text>Pregunta 93: ¿Qué significa el "flag" AA en una respuesta DNS?</text>
+    <option letter="a" correct="true">Indica que la respuesta proviene de un servidor autoritativo</option>
+    <option letter="b" correct="false">Indica que la respuesta está en caché</option>
+    <option letter="c" correct="false">Indica que la respuesta ha sido encriptada</option>
+    <option letter="d" correct="false">Indica un error en la consulta</option>
+  </question>
+  <question>
+    <text>Pregunta 94: ¿Qué es un "subdominio delegado"?</text>
+    <option letter="a" correct="false">Un dominio que se utiliza para correos</option>
+    <option letter="b" correct="false">Un dominio que se redirige a través de un CNAME</option>
+    <option letter="c" correct="true">Una parte de un dominio principal a la que se le ha delegado autoridad</option>
+    <option letter="d" correct="false">Un dominio que utiliza un registro TXT para validación</option>
+  </question>
+  <question>
+    <text>Pregunta 95: ¿Qué herramienta de línea de comandos se usa comúnmente para depurar problemas de DNS?</text>
+    <option letter="a" correct="false">ifconfig</option>
+    <option letter="b" correct="false">netstat</option>
+    <option letter="c" correct="false">arp</option>
+    <option letter="d" correct="true">dig</option>
+  </question>
+  <question>
+    <text>Pregunta 96: ¿Qué es un registro "WKS" en DNS?</text>
+    <option letter="a" correct="false">Un registro para alias</option>
+    <option letter="b" correct="true">Un registro obsoleto que describe los servicios ofrecidos por un host</option>
+    <option letter="c" correct="false">Un registro para direcciones IPv6</option>
+    <option letter="d" correct="false">Un registro para autenticación</option>
+  </question>
+  <question>
+    <text>Pregunta 97: ¿Qué implica la ausencia de un registro SOA en una zona DNS?</text>
+    <option letter="a" correct="true">La zona no tiene información administrativa esencial</option>
+    <option letter="b" correct="false">El dominio no tiene servidores NS configurados</option>
+    <option letter="c" correct="false">Los registros A y AAAA no funcionarán</option>
+    <option letter="d" correct="false">El correo electrónico no será enviado</option>
+  </question>
+  <question>
+    <text>Pregunta 98: ¿Qué es un "DNS Anycast"?</text>
+    <option letter="a" correct="false">Un protocolo para encriptar consultas</option>
+    <option letter="b" correct="false">Un tipo de registro DNS</option>
+    <option letter="c" correct="true">Una técnica para dirigir consultas a la instancia más cercana de un servidor en una red distribuida</option>
+    <option letter="d" correct="false">Un sistema de gestión de registros</option>
+  </question>
+  <question>
+    <text>Pregunta 99: ¿Qué se entiende por "resolución híbrida" en DNS?</text>
+    <option letter="a" correct="false">La combinación de consultas recursivas y iterativas</option>
+    <option letter="b" correct="false">La fusión de registros A y AAAA</option>
+    <option letter="c" correct="false">La integración de DNSSEC con Anycast</option>
+    <option letter="d" correct="true">La combinación de diferentes métodos de resolución para optimizar la consulta</option>
+  </question>
+  <question>
+    <text>Pregunta 100: ¿Qué medida puede ayudar a mejorar la seguridad del DNS?</text>
+    <option letter="a" correct="false">Reducir el tamaño del TTL</option>
+    <option letter="b" correct="true">Implementar DNSSEC</option>
+    <option letter="c" correct="false">Utilizar consultas únicamente vía TCP</option>
+    <option letter="d" correct="false">Eliminar registros CNAME</option>
+  </question>
+</exam>
